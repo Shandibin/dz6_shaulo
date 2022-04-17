@@ -1,0 +1,15 @@
+include ../mixins/category-item
+section.category.container 
+    h3 Shop By 
+    h2 Categories 
+    .category__row 
+        +category-item( 
+            {img: 'assets/imgs/category1.svg',
+             text: 'Vegetables & Fruits'}
+        )
+        +category-item({{img: 'assets/imgs/category1.svg',
+             text: 'Vegetables & Fruits'})
+        +category-item('./assets/imgs/category1.svg', 'Dairy & Eggs')
+        +category-item('./assets/imgs/category1.svg', 'Beverages')
+        +category-item('./assets/imgs/category1.svg', 'Snacks')
+        +category-item('./assets/imgs/category1.svg', 'Home Care')
