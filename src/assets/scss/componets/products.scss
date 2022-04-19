@@ -13,7 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
     padding: 20px;
     max-width: calc((100% - 40px) / 5);
     min-height: 335px;
@@ -87,32 +86,31 @@
   &__checkbox {
     display: flex;
     justify-content: space-between;
-  }
+    position: relative;
+    }
 }
 
-.prices {
-  &__price {
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 1.4;
-    color: #7fad39;
-    margin-bottom: 27px;
-  }
-
-  &__price-previous {
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 1.4;
-    margin-bottom: 27px;
-    text-decoration-line: line-through;
-    color: #a9a9a9;
-  }
+.prices__price {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #7fad39;
+  margin-bottom: 27px;
 }
 
-.quantity {
+.price-previous {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 27px;
+  text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+
+.cheсkbox__quantity {
   display: flex;
-  height: 25px;
-  width: 75px;
+  min-height: 25px;
+  max-width: 75px;
 }
 
 .btn__minus {
@@ -121,6 +119,8 @@
   width: 25px;
   border: none;
   padding: 0;
+  margin-top: 12px;
+  margin-right: 25px;
 }
 
 .btn__plus {
@@ -129,21 +129,31 @@
   width: 25px;
   border: none;
   padding: 0;
+  margin-top: 12px;
 }
 
 .number {
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 1.8;
-  color: #2a2a2a;
-  width: 25px;
-  height: 25px;
+  position: absolute;
   border: none;
   text-align: center;
+  height: 13px;
+  max-width: 15px;
+  left: 32px;
+  top: 19px;
+  
+}
+
+input::placeholder {
+  font-weight: 800;
+  font-size: 12px;
+  color: #2a2a2a;
+  line-height: 183%;
 }
 
 .cart {
+  position: absolute;
   border: none;
   background: none;
-  margin-left: 65px;
+  top: 15px;
+  right: 0;
 }
