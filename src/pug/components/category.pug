@@ -1,15 +1,30 @@
 include ../mixins/category-item
-section.category.container 
-    h3 Shop By 
-    h2 Categories 
+section.category.block.container 
+    h3.block__subtitle Shop By 
+    h2.block__title Categories 
     .category__row 
         +category-item( 
-            {img: 'assets/imgs/category1.svg',
+            {img: 'assets/imgs/img-cat/category1.svg',
              text: 'Vegetables & Fruits'}
         )
-        +category-item({{img: 'assets/imgs/category1.svg',
-             text: 'Vegetables & Fruits'})
-        +category-item('./assets/imgs/category1.svg', 'Dairy & Eggs')
-        +category-item('./assets/imgs/category1.svg', 'Beverages')
-        +category-item('./assets/imgs/category1.svg', 'Snacks')
-        +category-item('./assets/imgs/category1.svg', 'Home Care')
+        +category-item( 
+            {img: 'assets/imgs/img-cat/category2.svg',
+             text: 'Grocery & Staples'}
+        )
+        +category-item( 
+            {img: 'assets/imgs/img-cat/category3.svg',
+             text: 'Dairy & Eggs'}
+        )
+        +category-item( 
+            {img: 'assets/imgs/img-cat/category4.svg',
+             text: 'Beverages'}
+        )
+        +category-item( 
+            {img: 'assets/imgs/img-cat/category5.svg',
+             text: 'Snacks'}
+        )
+        +category-item( 
+            {img: 'assets/imgs/img-cat/category6.svg',
+             text: 'Home Care'}
+        )
+        

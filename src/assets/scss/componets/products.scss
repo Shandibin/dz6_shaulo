@@ -1,0 +1,149 @@
+.products {
+  & {
+    font-family: "Cerebri Sans Pro";
+    font-style: normal;
+  }
+
+  &__row {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: calc((100% - 40px) / 5);
+    min-height: 335px;
+    background: #ffffff;
+    border: 0.5px solid rgba(42, 42, 42, 0.15);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.product-item {
+  &__dis {
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+  }
+
+  &__discount {
+    font-weight: 800;
+    font-size: 12px;
+    padding: 9px 7px 8px;
+    text-align: center;
+    color: #ffffff;
+    background: #7fad39;
+  }
+
+  &__like {
+    border: none;
+    background: #d8e6c3;
+    border-radius: 50px;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__like:focus {
+    fill: red;
+  }
+
+  &__availability {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #a9a9a9;
+    text-align: center;
+    min-width: 174px;
+    margin-top: 9px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &__name {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2a2a2a;
+    min-width: 174px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: center;
+    min-width: 174px;
+    margin-top: 19px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.prices {
+  &__price {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #7fad39;
+    margin-bottom: 27px;
+  }
+
+  &__price-previous {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 27px;
+    text-decoration-line: line-through;
+    color: #a9a9a9;
+  }
+}
+
+.quantity {
+  display: flex;
+  height: 25px;
+  width: 75px;
+}
+
+.btn__minus {
+  background: #2a2a2a;
+  height: 25px;
+  width: 25px;
+  border: none;
+  padding: 0;
+}
+
+.btn__plus {
+  background: #2a2a2a;
+  height: 25px;
+  width: 25px;
+  border: none;
+  padding: 0;
+}
+
+.number {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #2a2a2a;
+  width: 25px;
+  height: 25px;
+  border: none;
+  text-align: center;
+}
+
+.cart {
+  border: none;
+  background: none;
+  margin-left: 65px;
+}
