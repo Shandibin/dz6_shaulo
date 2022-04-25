@@ -3,9 +3,22 @@
 @import "./componets/header.scss";
 @import "./componets/category.scss";
 @import "./componets/products.scss";
+@import "./componets/catalog.scss";
 
 
 
 
+.btn {
+    background: red;
+    margin: 50px;
+    transition: background-color 0.4s ease 2s ;
+    color: white;
+
+    &:hover {
+        background-color:green;
+        color: black;
+        transition: background-color 0.4s ease 2s color 0.4s ease 2s ;
+    }
+}
 
 
